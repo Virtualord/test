@@ -9,6 +9,9 @@ OVERRIDE_PRODUCT_COMPRESSED_APEX := false
 # Call proprietary blob setup
 $(call inherit-product, vendor/realme/r5x/r5x-vendor.mk)
 
+# Enable project quotas and casefolding for emulated storage without sdcardfs
+$(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
+
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio@5.0-impl \
