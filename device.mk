@@ -493,6 +493,8 @@ $(call inherit-product, vendor/qcom/opensource/vibrator/vibrator-vendor-product.
 PRODUCT_PRODUCT_VNDK_VERSION := current
 PRODUCT_ENFORCE_PRODUCT_PARTITION_INTERFACE := true
 
+BOARD_SHIPPING_API_LEVEL := 30
+
 PRODUCT_PACKAGES += \
     vndk_package \
     com.android.vndk.current.on_vendor
