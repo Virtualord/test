@@ -74,7 +74,6 @@ vendor.audio.feature.wsa.enable=false
 # Bluetooth
 persist.bluetooth.a2dp_offload.disabled=true
 persist.vendor.bluetooth.modem_nv_support=true
-persist.bluetooth.a2dp_offload.cap=sbc-aac-aptx-aptxhd-ldac
 persist.vendor.qcom.bluetooth.a2dp_offload_cap=sbc-aac-aptx-aptxhd-ldac
 persist.vendor.qcom.bluetooth.aac_vbr_ctl.enabled=false
 persist.vendor.qcom.bluetooth.enable.splita2dp=false
