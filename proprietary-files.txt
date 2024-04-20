@@ -2284,10 +2284,9 @@ vendor/firmware/ipa_fws.b04|e3552692a635dceca369cab6d9349091b669c80a
 vendor/firmware/ipa_fws.elf|108ca9816c06433e0dc5019acf1ae0a7537b4498
 vendor/firmware/ipa_fws.mdt|0500903b232a3086c444b9b4b5fa9355bbcfa711
 
-# Keystore - from qssi-user-11-RKQ1.200903.002-1651143221904-release-keys
-vendor/bin/hw/android.hardware.keymaster@4.0-service-qti|8de64be44b03d77d6f9a0bc62cd7019e21e20735
-vendor/etc/init/android.hardware.keymaster@4.0-service-qti.rc|c8999fb1bccbef81e6b362059e9a6ebd023de98f
-vendor/lib/libqcbor.so|6f90ae6aee92a4a09b34432cb6b95dc1977f4772
+# Keystore - from RMX2050_11_C.10
+vendor/bin/hw/android.hardware.keymaster@4.1-service-qti|c5fe6ad946b5cc901cfb38002bf5fb039fd47ad7
+vendor/etc/init/android.hardware.keymaster@4.0-service-qti.rc:vendor/etc/init/android.hardware.keymaster@4.1-service-qti.rc|26710162b144c80a84a04e5211bdcaaf3bd1c2b9
 vendor/lib64/libkeymasterdeviceutils.so|e18e85743b559afd0a0638568ba149bd045f8250
 vendor/lib64/libkeymasterprovision.so|8ca3e21fb270f6ef9075fbf93c9263f24fc3d0c4
 vendor/lib64/libkeymasterutils.so|db21b2fec8e5808c562665746d0394575004070b
