@@ -120,7 +120,10 @@ TARGET_KERNEL_ADDITIONAL_FLAGS := \
    HOSTCFLAGS="-fuse-ld=lld -Wno-unused-command-line-argument"
 
 # Manifests and SKU
-DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/configs/manifests/manifest.xml
+DEVICE_MANIFEST_FILE := \
+    $(DEVICE_PATH)/configs/manifests/manifest.xml \
+    hardware/qcom-caf/sm8150/media/conf_files/sm6150/c2_manifest.xml
+
 DEVICE_MATRIX_FILE := $(DEVICE_PATH)/configs/manifests/compatibility_matrix.xml
 ODM_MANIFEST_SKUS += nfc_ese
 ODM_MANIFEST_NFC_ESE_FILES := $(DEVICE_PATH)/configs/manifests/manifest_nfc_ese.xml
@@ -175,8 +178,9 @@ TARGET_BOARD_PLATFORM := trinket
 
 # Properties
 BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
-TARGET_SYSTEM_PROP += $(DEVICE_PATH)/configs/props/system.prop
 TARGET_PRODUCT_PROP += $(DEVICE_PATH)/configs/props/product.prop
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/configs/props/system.prop
+TARGET_SYSTEM_EXT_PROP += $(DEVICE_PATH)/configs/props/system_ext.prop
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/configs/props/vendor.prop
 
 # QCOM hardware
