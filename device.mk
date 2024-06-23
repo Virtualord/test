@@ -12,6 +12,9 @@ $(call inherit-product, vendor/realme/r5x/r5x-vendor.mk)
 # Enable project quotas and casefolding for emulated storage without sdcardfs
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
+# Add common definitions for Qualcomm
+$(call inherit-product, hardware/qcom-caf/common/common.mk)
+
 # ANT+
 PRODUCT_PACKAGES += \
     com.dsi.ant@1.0.vendor
