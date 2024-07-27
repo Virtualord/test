@@ -480,9 +480,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     prebuilts/vndk/v32/arm64/arch-arm64-armv8-a/shared/vndk-sp/libhidlbase.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhidlbase-v32.so
 
-# V4a
-$(call inherit-product-if-exists, packages/apps/ViPER4AndroidFX/config.mk)
-
 # Wifi
 PRODUCT_PACKAGES += \
     android.hardware.wifi-service \
