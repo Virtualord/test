@@ -13,7 +13,8 @@ $(call inherit-product, vendor/voltage/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 720
 
 # Inherit from r5x device
-$(call inherit-product, $(LOCAL_PATH)/device.mk)
+$(call inherit-product, $
+
 
 PRODUCT_BRAND := realme
 PRODUCT_DEVICE := r5x
